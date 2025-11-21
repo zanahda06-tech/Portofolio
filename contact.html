@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    </nav>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Mahasiswa - Contact</title>
+    <link rel="stylesheet" href="P14/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navigasi Bar (Fixed Top) -->
+    <header class="header">
+        <div class="container nav-content">
+            <div class="logo">
+                ZanPortofolio
+            </div>
+            <nav>
+                <a href="P14/index.html" data-page="index.html" class="nav-link">Home</a>
+                <a href="P14/about.html" data-page="about.html" class="nav-link">About</a>
+                <a href="P14/project.html" data-page="project.html" class="nav-link">Project</a>
+                <a href="P14/contact.html" data-page="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container">
+
+        <!-- KONTEN CONTACT -->
+        <section id="contact" class="page-section" style="display: block; min-height: calc(100vh - 12rem);">
+            <h2 class="section-title">Kontak Saya</h2>
+
+            <div class="contact-form-container">
+                <p style="margin-bottom: 1.5rem; text-align: center;">Tertarik untuk berkolaborasi? Silakan kirimkan pesan Anda melalui formulir di bawah ini.</p>
+
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nama Lengkap</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Alamat Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Pesan Anda</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary">
+                        Kirim Pesan
+                    </button>
+                </form>
+
+                <!-- Message Box for Success/Error -->
+                <div id="messageBox" class="hidden"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 ZanAhda. Portofolio Mahasiswa.</p>
+        </div>
+    </footer>
+
+    <script src="P14/script.js"></script>
+</body>
+</html>
